@@ -1,2 +1,4 @@
 # nitechcreate-website
-Nitech Create's website
+ウェブサイト、外部むけにいろいろ発信していこうという場所
+基本Hexoでできてます。
+そのうちWeb上から記事を書けるようにするので(別プロジェクト)、しばしお待ちを。
