@@ -1,11 +1,11 @@
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  const width = 960;
-  const height = 540;
-  const boxnum = 20;//boxの数
-  const Cylindernum=20;
-  const octahedronnum=20;
+  const width = document.body.clientWidth;
+  const height = window.innerHeight;
+  const boxnum = 10;//boxの数
+  const Cylindernum=10;
+  const octahedronnum=10;
   // レンダラーを作成
   const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector("#threecanvas")
