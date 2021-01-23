@@ -1,8 +1,25 @@
 body{
     margin:0;
     background-color: #060B35;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    font-size: 50px;
 }
 lottie-player{
-    margin:auto
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
 
+.wrapper {
+    display: flex;
+  }
+
+.underlogotop{
+    width: 800px;
+    margin-top: 450px;
+}
+.flexcontents{
+    flex: 1;
+}
