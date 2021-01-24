@@ -1,23 +1,30 @@
 body{
     margin:0;
-    background-color: #060B35;
+    background-image: url(/img/background.png);
+    background-size: cover;
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
     font-size: 25px;
+    z-index: 1;
 }
 lottie-player{
     position: absolute;
     top: 0;
     left: -100px;
-
+    mix-blend-mode: lighten;
+    z-index: 2;
 }
 
 h1 {
     font-weight: 100;
-    background-image: linear-gradient(45deg, #5590E8, #060B35 70%);
+}
+
+#indextop{
+    background-image: linear-gradient(45deg, #5590E8, rgba(0,0,0,0) 70%);
     background-size: 100% 30%;
     background-repeat: no-repeat;
     background-position: 10px bottom;
+    margin-top: 0;
 }
 p{
     margin:25px 0 25px 1em;
@@ -25,16 +32,19 @@ p{
 
 .wrapper {
     display: flex;
+    z-index: 3;
   }
 
 .underlogotop{
     width: 675px;
     margin-top: 450px;
     padding-left: 100px;
+    z-index: 3;
 }
 .flexcontents{
     flex: 1;
     margin:100px 150px 100px 100px;
+    z-index: 3;
 }
 
 .flexcontents img{
@@ -44,11 +54,20 @@ p{
     }
 
 .imgbox-index{
-    
-    background-image: linear-gradient(90deg, #CE9E41, #060B35 70%);
+    margin-bottom: 100px;
+    background-image: linear-gradient(80deg, rgba(0,0,0,0.8), rgba(0,0,0,0) 75%);
     background-position: 0px 50px;
     background-repeat: no-repeat;
     clip-path : polygon(0px 0px ,10% 100% ,150% 100% ,150% 0px );
+}
+
+#contents-index{
+    color: black;
+    height: 1000px;
+    background-color: white;
+    margin-top: -800px;
+    z-index: 2;
+    clip-path : polygon(0px 300px ,0% 100% ,100% 100% ,100% 0px );
 }
 
 
