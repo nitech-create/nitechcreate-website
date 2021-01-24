@@ -5,7 +5,6 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
     font-size: 25px;
-    z-index: 1;
 }
 lottie-player{
     position: absolute;
@@ -39,12 +38,11 @@ p{
     width: 675px;
     margin-top: 450px;
     padding-left: 100px;
-    z-index: 3;
 }
 .flexcontents{
+    z-index: 4;
     flex: 1;
     margin:100px 150px 100px 100px;
-    z-index: 3;
 }
 
 .flexcontents img{
@@ -65,12 +63,15 @@ p{
     color: black;
     background-color: white;
     margin-top: -800px;
-    z-index: 2;
     clip-path : polygon(0px 300px ,0% 100% ,100% 100% ,100% 0px );
 }
 
-#testcanvas{
-    z-index: 3;
-}
 
+
+#maincontent{
+
+    color: black;
+    position: absolute;
+    top:1000px
+}
 
