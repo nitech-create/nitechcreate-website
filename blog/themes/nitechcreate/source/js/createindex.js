@@ -1,5 +1,5 @@
 window.addEventListener("load", init);
-var canvas = document.getElementById("testcanvas");
+var canvas = document.getElementById("createjs");
 var width = document.body.clientWidth;
 var height = document.documentElement.clientHeight;
 canvas.width = width;
@@ -7,7 +7,7 @@ canvas.height = height*2;
 
 function init() {
     // Stageオブジェクトを作成します
-    var stage = new createjs.Stage("testcanvas");
+    var stage = new createjs.Stage("createjs");
 
     const ballnum = 150;
     const ballstripenum = 150;
