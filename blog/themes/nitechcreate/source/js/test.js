@@ -3,20 +3,22 @@ var canvas = document.getElementById("testcanvas");
 var width = document.body.clientWidth;
 var height = document.documentElement.clientHeight;
 canvas.width = width;
-canvas.height = height;
+canvas.height = height*2;
 
 function init() {
     // Stageオブジェクトを作成します
     var stage = new createjs.Stage("testcanvas");
 
-    const ballnum = 10;
-    const ballstripenum = 10;
-    const linenum = 10;
+    const ballnum = 150;
+    const ballstripenum = 150;
+    const linenum = 250;
 
     const ballsize = 30
-    const ballstripesize = 0.2;
+    const ballstripesize = 0.1;
     const linesize=200;
     const lineweight=50
+
+    var linesizearray=new Array(linenum)
 
 
 
@@ -56,8 +58,8 @@ function init() {
 
         }
 
-        ball.x = Math.random() * width;
-        ball.y = Math.random() * height;
+        ball.x = (Math.random()*6-3) * width;
+        ball.y = (Math.random()*6-3) * height;
         stage.addChild(ball);
     }
 
@@ -89,8 +91,8 @@ function init() {
 
         ballstripe.scale=(Math.random() + 0.5) * ballstripesize;
         
-        ballstripe.x = Math.random() * width;
-        ballstripe.y = Math.random() * height;
+        ballstripe.x = (Math.random()*6-3) * width;
+        ballstripe.y = (Math.random()*6-3) * height;
     }
 
     for (var i = 0; i < linenum; i++) {
@@ -124,23 +126,40 @@ function init() {
         }
 var lineweights = (Math.random()+0.5)*lineweight;
 var linesizes=(Math.random()*3+1.5)*linesize;
+linesizearray[i]=linesizes;
         line.graphics.moveTo(linesizes,0)
         .lineTo(linesizes,lineweights)
         .lineTo(0,linesizes+lineweights)
         .lineTo(0,linesizes)
         .lineTo(linesizes,0)
 
-        line.x = Math.random() * width;
-        line.y = Math.random() * height;
+        line.x = (Math.random()*6-3) * width;
+        line.y = (Math.random()*6-3) * height;
         stage.addChild(line);
     }
 
     createjs.Ticker.setFPS(60);
     createjs.Ticker.addEventListener('tick', update , false);
 
-    
-
+    console.log(stage.children[21])
+var scrollbefore=0;
+var scrollafter=0;
     function update(){
+        scrollbefore=scrollafter;
+        scrollafter=window.pageYOffset;
+        var scroll=scrollafter-scrollbefore;
+        for(var i =0;i<ballnum;i++){
+            stage.children[i].x +=scroll*stage.children[i].graphics.command.radius/200
+            stage.children[i].y -=scroll*stage.children[i].graphics.command.radius/200
+        }
+        for(var i =ballnum;i<ballnum+ballstripenum;i++){
+            stage.children[i].x +=scroll*stage.children[i].scale*3
+            stage.children[i].y -=scroll*stage.children[i].scale*3
+        }
+        for(var i =ballnum+ballstripenum;i<ballnum+ballstripenum+linenum;i++){
+            stage.children[i].x +=scroll*linesizearray[i-ballnum-ballstripenum]/300
+            stage.children[i].y -=scroll*linesizearray[i-ballnum-ballstripenum]/300
+        }
         stage.update();
     }
 
