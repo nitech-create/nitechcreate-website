@@ -15,7 +15,11 @@ lottie-player{
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 #indextop{
@@ -24,6 +28,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: 10px bottom;
     margin-top: 0;
+    font-weight: 100;
 }
 p{
     margin:25px 0 25px 1em;
@@ -64,14 +69,62 @@ p{
     background-color: white;
     margin-top: -800px;
     clip-path : polygon(0px 300px ,0% 100% ,100% 100% ,100% 0px );
+    z-index: 2;
 }
 
 
 
-#maincontent{
-
+#maincontent-index1{
+    margin-left: 100px;
     color: black;
     position: absolute;
-    top:1000px
+    top:1200px;
+    
+    
 }
 
+#createjs{
+    position: relative;
+    filter: blur(2px) opacity(40%);
+    z-index: 2;
+}
+
+#maincontent-index1 h1{
+    background-image: linear-gradient(45deg,#FBD000 , #FD9267 100%);
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    background-position: 10px bottom;
+    letter-spacing: 8px;
+}
+
+#maincontent-index1 .sentence{
+    margin-left: 1em;
+}
+
+#maincontent-index1 p{
+    margin-left: 0px;
+}
+
+#maincontent-index2{
+    position: absolute;
+    top:1500px;
+    left:1000px;
+    color: black;
+    margin-right: 100px;
+}
+
+#maincontent-index2 h1{
+    background-image: linear-gradient(45deg,#8CC919 , #00B88E 150%);
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    background-position: 10px bottom;
+    letter-spacing: 8px;
+}
+
+#maincontent-index2 .sentence{
+    margin-left: 1em;
+}
+
+#maincontent-index2 p{
+    margin-left: 0px;
+}
