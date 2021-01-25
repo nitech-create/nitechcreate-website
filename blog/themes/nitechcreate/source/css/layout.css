@@ -68,7 +68,7 @@ p{
     color: black;
     background-color: white;
     margin-top: -800px;
-    clip-path : polygon(0px 300px ,0% 100% ,100% 100% ,100% 0px );
+    clip-path : polygon(0px 300px ,0% 85% ,100% 95% ,100% 0px );
     z-index: 2;
 }
 
@@ -127,4 +127,11 @@ p{
 
 #maincontent-index2 p{
     margin-left: 0px;
+}
+
+#contents-index2{
+    height:2000px;
+    background-color: blanchedalmond;
+    margin-top: -500px;
+    z-index: 50;
 }
