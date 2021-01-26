@@ -142,15 +142,39 @@ p{
     margin: 0 100px 0 100px;
 }
 
-#index2-contents h1{
+
+
+#member-title{
     background-image: linear-gradient(45deg,#FDA64A , #F8759D 150%);
     background-size: 30% 30%;
     background-repeat: no-repeat;
     background-position: 10px bottom;
     letter-spacing: 8px;
+
 }
 
 .swiper-container {
-    width: 600px;
-    height: 300px;
+    width: 1000px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.swiper-slide{
+    border: solid black;
+    width: 910px;
+    height: 550px;
+    margin-top: 50px;
+}
+.swiper-slide img{
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.swiper-slide h1{
+margin-left: 220px;
+letter-spacing: 0 !important;
+}
+
+.membercard{
+    margin: 50px;
 }
