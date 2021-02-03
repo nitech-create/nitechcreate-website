@@ -1,4 +1,40 @@
 $(function () {
+    var pictures=["dokudami.jpg","LT0.png"]
+    var ind=0;
+    $("#picbefore").click(function(){
+        if(ind==0){
+            ind=pictures.length-1
+        }else{
+            ind=ind-1
+        }
+        $("#indexpic").attr("src","/img/"+pictures[ind])
+        $("#picnum").text(ind)
+        $("#picpath").text(pictures[ind])
+    })
+
+    $("#picnext").click(function(){
+        if(ind==pictures.length-1){
+            ind=0
+        }else{
+            ind=ind+1
+        }
+        $("#indexpic").attr("src","/img/"+pictures[ind])
+        $("#picnum").text(ind)
+        $("#picpath").text(pictures[ind])
+    })
+
+    var members=["mem_dokudami.png"]
+    var ind_mem=0;
+    $("#membefore").click(function(){
+        if(ind_mem==0){
+            ind_mem=members.length-1
+        }else{
+            ind_mem=ind_mem-1
+        }
+        $("#indexmem").attr("src","/img/"+members[ind])
+        $("#memnum").text(ind_mem)
+        $("#mempath").text(pictures[ind_mem])
+    })
     $("#list-about").css("background-color","#800000")
     $('.contents-box').each(function (index, element) {
         $(element).draggable({

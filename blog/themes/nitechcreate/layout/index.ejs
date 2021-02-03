@@ -1,10 +1,9 @@
-
 <div id="wrapall-index">
     <img class="logo" src="/img/logo.svg" alt="">
-    
-    
+
     <div class="contents-box" id="about" data-target="#list-about">
-        <p class="data"><span class="material-icons">wysiwyg</span>data.about <span class="ope"><span class="material-icons">close</span></span></p>
+        <p class="data"><span class="material-icons">wysiwyg</span>data.about <span class="ope"><span
+                    class="material-icons">close</span></span></p>
         <div class="box">
 
             <h1>nitech Createとは</h1>
@@ -19,7 +18,8 @@
     </div>
 
     <div class="contents-box" id="dokudami" data-target="#list-picture1">
-        <p class="data"><span class="material-icons">photo</span>data.picures[0] - dokudami.jpg<span class="ope"><span class="material-icons">close</span></span></p>
+        <p class="data"><span class="material-icons">photo</span>data.picures[<span id="picnum">0</span>] - <span id="picpath">dokudami.jpg</span>
+            <span class="ope"><span class="material-icons">close</span></span></p>
         <div class="box-picture">
             <div class="bar">
                 <ul>
@@ -28,12 +28,25 @@
                     <li>View(<u>V</u>)</li>
                 </ul>
             </div>
-            <img draggable="false" src="/img/dokudami.jpg" alt="">
+            <div id="picbefore">
+                <span class="material-icons" >
+                    navigate_before
+                </span>
+            </div>
+
+            <div id="picnext">
+                <span class="material-icons" >
+                    navigate_next
+                </span>
+            </div>
+
+            <img id="indexpic" draggable="false" src="/img/dokudami.jpg" alt="">
         </div>
     </div>
-    
+
     <div class="contents-box" id="activity" data-target="#list-activities">
-        <p class="data"><span class="material-icons">wysiwyg</span>data.activities<span class="ope"><span class="material-icons">close</span></span></p>
+        <p class="data"><span class="material-icons">wysiwyg</span>data.activities<span class="ope"><span
+                    class="material-icons">close</span></span></p>
         <div class="box">
             <h1>活動内容</h1>
             <div class="box-sentence">
@@ -48,9 +61,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class="contents-box" id="recruit" data-target="#list-recruit">
-        <p class="data"><span class="material-icons">wysiwyg</span>data.recruit<span class="ope"><span class="material-icons">close</span></span></p>
+        <p class="data"><span class="material-icons">wysiwyg</span>data.recruit<span class="ope"><span
+                    class="material-icons">close</span></span></p>
         <div class="box">
             <h1>人員募集</h1>
             <div class="box-sentence">
@@ -62,9 +76,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class="contents-box" id="join" data-target="#list-join">
-        <p class="data"><span class="material-icons">wysiwyg</span>data.join<span class="ope"><span class="material-icons">close</span></span></p>
+        <p class="data"><span class="material-icons">wysiwyg</span>data.join<span class="ope"><span
+                    class="material-icons">close</span></span></p>
         <div class="box">
             <h1>参加方法</h1>
             <div class="box-sentence">
@@ -76,7 +91,34 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="contents-box" id="members" data-target="#list-members">
+        <p class="data"><span class="material-icons">photo</span>data.active.members[<span id="memnum">0</span>] - <span id="memname">dokudami</span>
+            <span class="ope"><span class="material-icons">close</span></span></p>
+        <div class="box-picture">
+            <div class="bar">
+                <ul>
+                    <li>File(<u>F</u>)</li>
+                    <li>Edit(<u>E</u>)</li>
+                    <li>View(<u>V</u>)</li>
+                </ul>
+            </div>
+            <div id="membefore">
+                <span class="material-icons" >
+                    navigate_before
+                </span>
+            </div>
+
+            <div id="memnext">
+                <span class="material-icons" >
+                    navigate_next
+                </span>
+            </div>
+
+            <img id="indexmem" draggable="false" src="/img/mem_dokudami.png" alt="">
+        </div>
+    </div>
+
 </div>
 
 <div id="taskbar">
@@ -86,6 +128,7 @@
         <li id="list-activities" data-target="#activity"><span class="material-icons">wysiwyg</span>activities</li>
         <li id="list-recruit" data-target="#recruit"><span class="material-icons">wysiwyg</span>recruit</li>
         <li id="list-join" data-target="#join"><span class="material-icons">wysiwyg</span>join</li>
+        <li id="list-members" data-target="#members"><span class="material-icons">photo</span>members</li>
     </ul>
 </div>
 <script src="/js/drag.js"></script>
