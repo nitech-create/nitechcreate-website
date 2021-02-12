@@ -4,7 +4,7 @@ body{
     /* background-color:#200000; */
     color: white;
     font-family: 'Noto Serif JP', serif;
-
+overflow: hidden;
     user-select: none;
 }
 #wrapall-index{
@@ -28,7 +28,7 @@ body{
 }
 
 #wrapall-index p{
-    font-weight: normal;
+    font-weight: 100;
 }
 
 .box-picture img{
@@ -146,9 +146,9 @@ color:white;
 }
 
 #join{
-    top: 50vh;
+    top: 30vh;
     left:55vw;
-    z-index: 101;
+    z-index: 80;
     border: solid 3px #994141;
 }
 
@@ -301,4 +301,35 @@ height: calc(100% - 43px);
 #memnext .material-icons:hover{
     background: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0)); 
     color: gray;
+}
+
+.box-sentence button{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    /* border-radius: 0.5rem; */
+    border-style: none;
+    color: white;
+    background-size: auto auto;
+background-color: #994141;
+background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px );
+}
+.box-sentence button:hover{
+    background-color: #990000;
+}
+
+.box-sentence button span{
+    /* background-color: black; */
+    padding:3px 6px;
 }
