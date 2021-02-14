@@ -6,6 +6,7 @@ body{
     font-family: 'Noto Serif JP', serif;
 overflow: hidden;
     user-select: none;
+    margin: 0;
 }
 #wrapall-index{
     margin:50px 50px;
@@ -14,7 +15,7 @@ overflow: hidden;
 }
 
 .logo{
-    width: 30%;
+    height: 30%;
     /* display: block; */
     margin: 0 auto;
     background-color: black;
@@ -32,7 +33,7 @@ overflow: hidden;
 }
 
 .box-picture img{
-    width: 40vw;
+    height: 50vh;
     vertical-align:top;
 }
 
@@ -157,8 +158,8 @@ color:white;
 }
 
 #members{
-    top: 25vh;
-    left:30vw;
+    top: 22vh;
+    left:26vw;
     z-index: 80;
     border: solid 3px #994141;
 }
@@ -182,8 +183,8 @@ color:white;
 #taskbar{
     width: 100vw;
     height: 40px;
-    /* background-color: #990000; */
-    background-image: url(/img/mark.svg);
+    background-color: #000000;
+    background-image: url(/img/logo.png);
     background-size: cover;
     position: absolute;
     bottom: 0;
@@ -330,6 +331,37 @@ background-image: repeating-linear-gradient(-45deg, transparent, transparent 10p
 }
 
 .box-sentence button span{
+    /* background-color: black; */
+    padding:3px 6px;
+}
+
+.box-picture button{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    /* border-radius: 0.5rem; */
+    border-style: none;
+    color: white;
+    background-size: auto auto;
+background-color: #994141;
+background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px );
+}
+.box-picture button:hover{
+    background-color: #990000;
+}
+
+.box-picture button span{
     /* background-color: black; */
     padding:3px 6px;
 }
