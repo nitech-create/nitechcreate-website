@@ -15,18 +15,47 @@
         </li>
     </ul>
 </nav>
-<% if(page.path=="forms/join/index.html" ){ %>
+<% console.log(page.path) 
+if(page.path=="forms/join/index.html" ){ %>
     <link rel="stylesheet" href="/css/forms.css">
     <!-- forms/join -->
-    <nav>
 
-    </nav>
     <div class="form">
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfQn-Z2jEKjvegR_ZLirFvnt9cyZ_2AxImL3osAra42IKcBjg/viewform?embedded=true"
             width="640" height="622" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
     </div>
+<% }else if(page.path=="forms/moodle-assistant/index.html"){ %>
+        <link rel="stylesheet" href="/css/forms.css">
+        <!-- moodle そのほかのお問い合わせ -->
+    
+        <div class="form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesjW6VmjD8gdMFkV5ioqpW5FR9hV9rXIKliXZTxTByf2Zs0Q/viewform?embedded=true" width="640" height="665" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+<% }else if(page.path=="forms/moodle-assistant/bug/index.html"){ %>
+    
+            <link rel="stylesheet" href="/css/forms.css">
+            <!-- moodle バグ報告 -->
+        
+            <div class="form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeok8msAz-mIfSpXsKGDs0B5WWrsBFurB2M1RsqZd7YUMRSyg/viewform?embedded=true" width="640" height="662" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+<% }else if(page.path=="forms/BB-desktop/index.html"){ %>
+                <link rel="stylesheet" href="/css/forms.css">
+                <!-- BB-PC そのほかのお問い合わせ -->
+            
+                <div class="form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-G_T5tNLVdK5hT0Q93FWHWX1DPnGg4CpL-PTH-jXlLpJ14g/viewform?embedded=true" width="640" height="672" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                </div>
+<% }else if(page.path=="forms/BB-desktop/bug/index.html"){ %>
+                    <link rel="stylesheet" href="/css/forms.css">
+                    <!-- BB-PC バグ報告 -->
+                
+                    <div class="form">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXPIuzBavuP3OyKDDdJFjfJyyrAE1nEjdTzGyvOv1s4999ZA/viewform?embedded=true" width="640" height="662" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    </div>
+                    
 <% }else if(page.path=="forms/index.html"){ %>
 <!-- forms -->
 <div class="content_wrapper">

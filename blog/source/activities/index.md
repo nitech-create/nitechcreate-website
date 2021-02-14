@@ -1,3 +1,7 @@
+---
+title: 活動内容
+---
+
 # Activities
 - ## NiTech BB desktop clientを制作
     - 2021/01/29 NiTech BB desktop clientの制作を開始
