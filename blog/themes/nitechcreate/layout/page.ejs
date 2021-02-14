@@ -12,8 +12,7 @@
         </li>
         <li>
             <a href="/forms">お問い合わせ</a>
-        </li>        
-
+        </li>
     </ul>
 </nav>
 <% if(page.path=="forms/join/index.html" ){ %>
@@ -29,18 +28,27 @@
 
     </div>
 <% }else if(page.path=="forms/index.html"){ %>
+<!-- forms -->
+<div class="content_wrapper">
 
+    <%- page.content %>
+
+</div>
 <% }else if(page.path=="forms/contact/index.html" ){ %>
     <link rel="stylesheet" href="/css/forms.css">
     <!-- forms/join -->
-    <nav>
-
-    </nav>
     <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuAVvfohX1JePC956Z_k6pgit5OUrTe9TA4hEibDBIF0zsvQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
     </div>
 <% }else if(page.path=="activities/index.html"){ %>
 <!-- activities -->
+<div class="content_wrapper">
+
+    <%- page.content %>
+
+</div>
+<% }else if(page.path=="members/index.html"){ %>
+<!-- members -->
 <div class="content_wrapper">
 
     <%- page.content %>

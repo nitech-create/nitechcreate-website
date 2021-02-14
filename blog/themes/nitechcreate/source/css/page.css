@@ -1,3 +1,6 @@
+body{
+    overflow-y: auto;
+}
 #navbar{
     background-color: black;
     position: fixed;
@@ -9,15 +12,17 @@ height: 55px;
 z-index: 9999;
 }
 #navbar ul{
-    margin-right: 20px;
+    margin-right: 60px;
     display: block;
     list-style-type: none;
     color: white;
 }
+
 #navbar ul li{
     display: inline-block;
     margin-left: 50px;
 }
+
 #navbar a{
     color: white;
     text-decoration: none;
@@ -28,4 +33,53 @@ z-index: 9999;
     margin: 70px auto 0 auto;
     padding: 20px;
     background-color: rgba(0,0,0,0.5);
+}
+
+h1{
+    color:white;
+}
+
+h2{
+color: lime;
+    margin-top: 60px;
+}
+
+p{
+    padding-left: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:deepskyblue;
+}
+
+.content_wrapper img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+h3{
+    margin: 10px 0 0 0;
+}
+
+.content_wrapper ul{
+    list-style-type: none;
+}
+
+.content_wrapper li{
+background-color: black;
+padding: 20px;
+margin-top: 50px;
+border-radius: 5px;
+}
+
+.content_wrapper li li{
+    background-color: none;
+    padding: 0px;
+    margin-top: 10px;
+    }
+
+li h2{
+    margin-top: 0;
+    margin-bottom: 0;
 }

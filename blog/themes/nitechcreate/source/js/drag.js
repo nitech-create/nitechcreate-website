@@ -30,6 +30,14 @@ $(function () {
         name:"Sora513",
         twitterid:"sayagi_sora",
         message:"メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ"
+    },{
+        name:"Ko_NiTech",
+        twitterid:"Ko_NITech",
+        message:"メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ"
+    },{
+        name:"uint256_t",
+        twitterid:"uint256_t",
+        message:"メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ"
     }]
     var ind_mem=0;
     $("#membefore").click(function () {
@@ -225,7 +233,6 @@ function redraw_mem(ind_num,members){
     $("#membertwitter").attr("href","https://twitter.com/"+members[ind_num].twitterid)
     $("#membermessage").text(members[ind_num].message)
     $("#profile_icon").attr("src","/img/"+members[ind_num].twitterid+".jpg")
-    $("#gotwitter").attr("onclick","window.open('https\:\/\/twitter.com/"+members[ind_num].twitterid+"','_blank')")
     $("#memnum").text(ind_num)
     $("#memname").text(members[ind_num].name)
 }

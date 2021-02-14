@@ -113,7 +113,7 @@ color:white;
     
     background-color: #990000;
 }
-#dokudami{
+#dokudami2{
     top: 0;
     left: 50vw;
     z-index: 89;
@@ -121,7 +121,7 @@ color:white;
     border: solid 3px #994141;
 }
 
-#dokudami .data{
+#dokudami2 .data{
     background-color: #994141;
 }
 
@@ -399,7 +399,7 @@ background-image: repeating-linear-gradient(-45deg, transparent, transparent 10p
     margin-top: 3vh;
 }
 .memtwitter_wrapper{
-    font-size: 2.3vh;
+    font-size:  1.7vh;
     margin-top: -2vh;
 }
 
@@ -410,5 +410,11 @@ background-image: repeating-linear-gradient(-45deg, transparent, transparent 10p
 }
 .memmessage_wrapper{
     margin-top: 3vh;
+    font-size: 1.7vh;
+}
+
+.comment_green{
+    color: green;
+    
     font-size: 1.7vh;
 }
