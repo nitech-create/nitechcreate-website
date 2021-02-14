@@ -1,41 +1,54 @@
 $(function () {
-    var pictures=["dokudami.jpg","LT0.png"]
-    var ind=0;
-    $("#picbefore").click(function(){
-        if(ind==0){
-            ind=pictures.length-1
-        }else{
-            ind=ind-1
+    var pictures = ["dokudami.jpg", "LT0.png"]
+    var ind = 0;
+    $("#picbefore").click(function () {
+        if (ind == 0) {
+            ind = pictures.length - 1
+        } else {
+            ind = ind - 1
         }
-        $("#indexpic").attr("src","/img/"+pictures[ind])
+        $("#indexpic").attr("src", "/img/" + pictures[ind])
         $("#picnum").text(ind)
         $("#picpath").text(pictures[ind])
     })
 
-    $("#picnext").click(function(){
-        if(ind==pictures.length-1){
-            ind=0
-        }else{
-            ind=ind+1
+    $("#picnext").click(function () {
+        if (ind == pictures.length - 1) {
+            ind = 0
+        } else {
+            ind = ind + 1
         }
-        $("#indexpic").attr("src","/img/"+pictures[ind])
+        $("#indexpic").attr("src", "/img/" + pictures[ind])
         $("#picnum").text(ind)
         $("#picpath").text(pictures[ind])
     })
-
-    var members=["mem_dokudami.png"]
+    var members = [{
+        name:"dokudami",
+        twitterid:"dokudamichang",
+        message:"メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ"
+    },{
+        name:"Sora513",
+        twitterid:"sayagi_sora",
+        message:"メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ"
+    }]
     var ind_mem=0;
-    $("#membefore").click(function(){
-        if(ind_mem==0){
-            ind_mem=members.length-1
-        }else{
-            ind_mem=ind_mem-1
+    $("#membefore").click(function () {
+        if (ind_mem == 0) {
+            ind_mem = members.length - 1
+        } else {
+            ind_mem--
         }
-        $("#indexmem").attr("src","/img/"+members[ind_mem])
-        $("#memnum").text(ind_mem)
-        $("#mempath").text(pictures[ind_mem])
+        redraw_mem(ind_mem,members)
     })
-    $("#list-about").css("background-color","#800000")
+    $("#memnext").click(function () {
+        if (ind_mem == members.length - 1) {
+            ind_mem = 0
+        } else {
+            ind_mem++
+        }
+        redraw_mem(ind_mem,members)
+    })
+    $("#list-about").css("background-color", "#800000")
     $('.contents-box').each(function (index, element) {
         $(element).draggable({
             handle: ".data",
@@ -94,16 +107,16 @@ $(function () {
         })
     })
 
-    $(".contents-box .data .ope").click(function(){
-        
-        if($(this).parent().parent().css("border-color")=="rgb(153, 0, 0)"){
-            var clicked=$(this)
-            setTimeout(function(){$(clicked.parent().parent().attr("data-target")).trigger("click")},100)
-        }else{
+    $(".contents-box .data .ope").click(function () {
+
+        if ($(this).parent().parent().css("border-color") == "rgb(153, 0, 0)") {
+            var clicked = $(this)
+            setTimeout(function () { $(clicked.parent().parent().attr("data-target")).trigger("click") }, 100)
+        } else {
             $($(this).parent().parent().attr("data-target")).trigger("click")
-            var clicked=$(this)
-            setTimeout(function(){$(clicked.parent().parent().attr("data-target")).trigger("click")},100)
-            
+            var clicked = $(this)
+            setTimeout(function () { $(clicked.parent().parent().attr("data-target")).trigger("click") }, 100)
+
         }
     })
 
@@ -132,7 +145,7 @@ $(function () {
                 topcontent = undefined
                 $('.contents-box').filter(function (index) {
 
-                    return $(this).attr("data-target") != ("#" + clickedlist.attr("id")) && $(this).css("visibility")!="hidden";
+                    return $(this).attr("data-target") != ("#" + clickedlist.attr("id")) && $(this).css("visibility") != "hidden";
                 }).each(function () {
                     var thisz = parseInt($(this).css('zIndex'), 10)
                     if (thisz > top) {
@@ -146,15 +159,15 @@ $(function () {
                     } else {
                         if (topcontent === undefined) {
                             topcontent = $(this)
-                        }else{
+                        } else {
                             $(this).css("border-color", "#994141")
                             $(this).children(".data").css("background-color", "#994141")
                         }
                     }
                 })
-                if(topcontent===undefined){
+                if (topcontent === undefined) {
 
-                }else{
+                } else {
 
                     topcontent.css("border-color", "#990000")
                     topcontent.children(".data").css("background-color", "#990000")
@@ -204,3 +217,15 @@ $(function () {
         }
     })
 });
+
+function redraw_mem(ind_num,members){
+
+    $("#membername").text(members[ind_num].name)
+    $("#membertwitter").text("@"+members[ind_num].twitterid)
+    $("#membertwitter").attr("href","https://twitter.com/"+members[ind_num].twitterid)
+    $("#membermessage").text(members[ind_num].message)
+    $("#profile_icon").attr("src","/img/"+members[ind_num].twitterid+".jpg")
+    $("#gotwitter").attr("onclick","window.open('https\:\/\/twitter.com/"+members[ind_num].twitterid+"','_blank')")
+    $("#memnum").text(ind_num)
+    $("#memname").text(members[ind_num].name)
+}

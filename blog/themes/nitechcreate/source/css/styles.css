@@ -33,7 +33,7 @@ overflow: hidden;
 }
 
 .box-picture img{
-    height: 50vh;
+    height: 55vh;
     vertical-align:top;
 }
 
@@ -261,6 +261,7 @@ height: calc(100% - 43px);
 }
 
 #membefore{
+    z-index: 99999;
     display: table;
 position: absolute;
 top:43px;
@@ -269,6 +270,7 @@ height: calc(100% - 43px);
 }
 
 #membefore .material-icons{
+    
     display: table-cell;
     font-size: 50px;
     vertical-align: middle;
@@ -282,7 +284,7 @@ height: calc(100% - 43px);
 }
 
 #memnext{
-    
+    z-index: 99999;
     display: table;
 position: absolute;
 font-size: 50px;
@@ -364,4 +366,49 @@ background-image: repeating-linear-gradient(-45deg, transparent, transparent 10p
 .box-picture button span{
     /* background-color: black; */
     padding:3px 6px;
+}
+
+.cardbox{
+    position: absolute;
+    height: 55vh;
+    width: 91vh;
+    top:43px;
+    
+}
+.innercard{
+    position: absolute;
+    margin:8.021978021% 7.802197802% 8.021978021% 7.802197802%;
+    width: 84.395604395%;
+    height: 73.454545454%;
+}
+ 
+#profile_icon{
+    width: 19.53125%;
+    height: auto;
+    border-radius: 50%;
+}
+.textbox{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 54.9479166667%;
+    height: 100%;
+}
+.memname_wrapper{
+    font-size: 5.5vh;
+    margin-top: 3vh;
+}
+.memtwitter_wrapper{
+    font-size: 2.3vh;
+    margin-top: -2vh;
+}
+
+#membertwitter{
+    color: white;
+    text-decoration: none;
+    
+}
+.memmessage_wrapper{
+    margin-top: 3vh;
+    font-size: 1.7vh;
 }

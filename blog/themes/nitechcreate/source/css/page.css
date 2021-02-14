@@ -1,0 +1,31 @@
+#navbar{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+text-align: right;
+height: 55px;
+z-index: 9999;
+}
+#navbar ul{
+    margin-right: 20px;
+    display: block;
+    list-style-type: none;
+    color: white;
+}
+#navbar ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+}
+.content_wrapper{
+    width: 50%;
+    display: block;
+    margin: 70px auto 0 auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+}

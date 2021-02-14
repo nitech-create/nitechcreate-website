@@ -13,7 +13,10 @@
                 <p>「仲間はほしいけど、定期的な集まりとかはめんどくさい」</p>
                 <p>「自分のしたいこともあるし、自分のペースで気楽にやっていきたい」</p>
                 <p>そんな人達をターゲットにした集団になっています。</p>
+                
+                <button onclick="location.href='/forms'"><span>お問い合わせ</span></button>
             </div>
+            
         </div>
     </div>
 
@@ -58,7 +61,7 @@
                 <p>「○○を発見した！」みたいな話をすると、何かしら反応が返ってきます。</p>
                 <p>「このイベント出ようよ！」みたいな話をすると、一緒に出る人が見つかります。</p>
                 <p>たまに"LT"と呼ばれるイベント(プレゼン大会)を任意参加で開いています。</p>
-                <button onclick="window.open('/activities','_blank')"><span>アクティビティに移動</span></button>
+                <button onclick="location.href='/activities'"><span>アクティビティに移動</span></button>
             
             </div>
         </div>
@@ -90,7 +93,7 @@
                 <p>「知らない人にDMを送るのは怖いよ！」という方は</p>
                 <p>このサイトのフォームにTwitterアカウントを書いて送信してください。</p>
                 <p>こちらからダイレクトメッセージを送信させていただきます。</p>
-                <button onclick="window.open('/forms/join','_blank')"><span>フォームに移動</span></button>
+                <button onclick="location.href='/forms/join'"><span>フォームに移動</span></button>
             </div>
         </div>
     </div>
@@ -118,8 +121,19 @@
                 </span>
             </div>
 
-            <img id="indexmem" draggable="false" src="/img/mem_dokudami.png" alt="">
-            <button onclick="window.open('https\:\/\/twitter.com/dokudamichang','_blank')"><span>Twitterに移動</span></button>
+            <img id="indexmem" draggable="false" src="/img/mem_back.png" alt="">
+            <div class="cardbox">
+                <div class="innercard">
+                    <img id="profile_icon" src="/img/dokudamichang.jpg" alt="">
+                    <div class="textbox">
+                        <div><p class="memname_wrapper">"<span id="membername">dokudami</span>"</p></div>
+                        <div><p class="memtwitter_wrapper">"<a id="membertwitter" href="https://twitter.com/dokudamichang">@dokudamichang</a>"</p></div>
+                        <div><p class="memmessage_wrapper">"<span id="membermessage">メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</span>"</p></div>
+                    
+                    </div>
+                </div>
+            </div>
+            <button id="gotwitter" onclick="window.open('https\:\/\/twitter.com/dokudamichang','_blank')"><span>Twitterに移動</span></button>
         </div>
     </div>
 
