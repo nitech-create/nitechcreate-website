@@ -1,3 +1,3 @@
 ---
-title: NiTech BB バグ報告
+title: NITech BB バグ報告
 ---

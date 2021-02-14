@@ -7,22 +7,22 @@ title: お問い合わせフォーム一覧
 
     - こちらからお問い合わせください。 
     - [参加フォーム](/forms/join)
-- ## moodle assistant for NiTechに関するお問い合わせ
+- ## moodle assistant for NITechに関するお問い合わせ
 
     - バグ報告はこちらからお願いいたします。 
-    - [moodle assistant for NiTech バグ報告](/forms/moodle-assistant/bug)
+    - [moodle assistant for NITech バグ報告](/forms/moodle-assistant/bug)
 <br><br>
     - その他のお問い合わせはこちらからお願いいたします。 
-    - [moodle assistant for NiTech その他のお問い合わせ](/forms/moodle-assistant/)
+    - [moodle assistant for NITech その他のお問い合わせ](/forms/moodle-assistant/)
 
 
-- ## NiTech BB desktop clientに関するお問い合わせ
+- ## NITech BB desktop clientに関するお問い合わせ
 
     - バグ報告はこちらからお願いいたします。 
-    - [NiTech BB desktop client バグ報告](/forms/BB-desktop/bug)
+    - [NITech BB desktop client バグ報告](/forms/BB-desktop/bug)
 <br><br>
     - その他のお問い合わせはこちらからお願いいたします。 
-    - [NiTech BB desktop client その他のお問い合わせ](/forms/BB-desktop/)
+    - [NITech BB desktop client その他のお問い合わせ](/forms/BB-desktop/)
 
 
 - ## そのほかのお問い合わせ
