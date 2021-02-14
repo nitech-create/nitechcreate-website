@@ -31,7 +31,7 @@ $(function () {
         }else{
             ind_mem=ind_mem-1
         }
-        $("#indexmem").attr("src","/img/"+members[ind])
+        $("#indexmem").attr("src","/img/"+members[ind_mem])
         $("#memnum").text(ind_mem)
         $("#mempath").text(pictures[ind_mem])
     })
