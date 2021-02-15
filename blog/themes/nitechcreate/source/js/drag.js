@@ -23,30 +23,30 @@ $(function () {
         $("#picpath").text(pictures[ind])
     })
     var members = [{
-        name:"dokudami",
-        twitterid:"dokudamichang",
-        message:" 調整中"
-    },{
-        name:"Sora513",
-        twitterid:"sayagi_sora",
-        message:" 調整中"
-    },{
-        name:"Ko_NiTech",
-        twitterid:"Ko_NITech",
-        message:" 調整中"
-    },{
-        name:"uint256_t",
-        twitterid:"uint256_t",
-        message:" 調整中"
+        name: "dokudami",
+        twitterid: "dokudamichang",
+        message: " 調整中"
+    }, {
+        name: "Sora513",
+        twitterid: "sayagi_sora",
+        message: " 調整中"
+    }, {
+        name: "Ko_NiTech",
+        twitterid: "Ko_NITech",
+        message: " 調整中"
+    }, {
+        name: "uint256_t",
+        twitterid: "uint256_t",
+        message: " 調整中"
     }]
-    var ind_mem=0;
+    var ind_mem = 0;
     $("#membefore").click(function () {
         if (ind_mem == 0) {
             ind_mem = members.length - 1
         } else {
             ind_mem--
         }
-        redraw_mem(ind_mem,members)
+        redraw_mem(ind_mem, members)
     })
     $("#memnext").click(function () {
         if (ind_mem == members.length - 1) {
@@ -54,9 +54,9 @@ $(function () {
         } else {
             ind_mem++
         }
-        redraw_mem(ind_mem,members)
+        redraw_mem(ind_mem, members)
     })
-    $("#list-about").css("background-color", "#800000")
+    $("#list-about").css("background-color", "mediumblue")
     $('.contents-box').each(function (index, element) {
         $(element).draggable({
             handle: ".data",
@@ -73,23 +73,23 @@ $(function () {
                         if (topcontent === undefined) {
 
                         } else {
-                            topcontent.css("border-color", "#994141")
-                            topcontent.children(".data").css("background-color", "#994141")
+                            topcontent.css("border-color", "midnightblue")
+                            topcontent.children(".data").css("background-color", "midnightblue")
                         }
                         topcontent = $(this)
                     } else {
-                        $(this).css("border-color", "#994141")
-                        $(this).children(".data").css("background-color", "#994141")
+                        $(this).css("border-color", "midnightblue")
+                        $(this).children(".data").css("background-color", "midnightblue")
                     }
                 })
                 $(this).css("zIndex", top + 1)
-                topcontent.css("border-color", "#990000")
-                topcontent.children(".data").css("background-color", "#990000")
+                topcontent.css("border-color", "royalblue")
+                topcontent.children(".data").css("background-color", "royalblue")
 
                 $("#taskbar li").each(function () {
-                    $(this).css("background-color", "#994141")
+                    $(this).css("background-color", "midnightblue")
                 })
-                $($(this).attr("data-target")).css("background-color", "#800000")
+                $($(this).attr("data-target")).css("background-color", "mediumblue")
 
             }
         });
@@ -102,14 +102,14 @@ $(function () {
                 if (thisz > top) {
                     top = thisz
                 }
-                $(this).css("border-color", "#994141")
-                $(this).children(".data").css("background-color", "#994141")
-                $($(this).attr("data-target")).css("background-color", "#994141")
+                $(this).css("border-color", "midnightblue")
+                $(this).children(".data").css("background-color", "midnightblue")
+                $($(this).attr("data-target")).css("background-color", "midnightblue")
             })
             $(this).css("zIndex", top + 1)
-            $(this).css("border-color", "#990000")
-            $(this).children(".data").css("background-color", "#990000")
-            $($(this).attr("data-target")).css("background-color", "rgb(128, 0, 0)")
+            $(this).css("border-color", "royalblue")
+            $(this).children(".data").css("background-color", "royalblue")
+            $($(this).attr("data-target")).css("background-color", "blue")
 
 
         })
@@ -117,7 +117,7 @@ $(function () {
 
     $(".contents-box .data .ope").click(function () {
 
-        if ($(this).parent().parent().css("border-color") == "rgb(153, 0, 0)") {
+        if ($(this).parent().parent().css("border-color") == "blue") {
             var clicked = $(this)
             setTimeout(function () { $(clicked.parent().parent().attr("data-target")).trigger("click") }, 100)
         } else {
@@ -160,16 +160,16 @@ $(function () {
                         top = thisz
                         if (topcontent === undefined) {
                         } else {
-                            topcontent.css("border-color", "#994141")
-                            topcontent.children(".data").css("background-color", "#994141")
+                            topcontent.css("border-color", "midnightblue")
+                            topcontent.children(".data").css("background-color", "midnightblue")
                         }
                         topcontent = $(this)
                     } else {
                         if (topcontent === undefined) {
                             topcontent = $(this)
                         } else {
-                            $(this).css("border-color", "#994141")
-                            $(this).children(".data").css("background-color", "#994141")
+                            $(this).css("border-color", "midnightblue")
+                            $(this).children(".data").css("background-color", "midnightblue")
                         }
                     }
                 })
@@ -177,8 +177,8 @@ $(function () {
 
                 } else {
 
-                    topcontent.css("border-color", "#990000")
-                    topcontent.children(".data").css("background-color", "#990000")
+                    topcontent.css("border-color", "royalblue")
+                    topcontent.children(".data").css("background-color", "royalblue")
                 }
 
                 var visible_exist = false;
@@ -186,10 +186,10 @@ $(function () {
                     if ($($(this).attr("data-target")).css("visibility") == "visible") {
                         visible_exist = true;
                     }
-                    $(this).css("background-color", "#994141")
+                    $(this).css("background-color", "midnightblue")
                 })
                 if (visible_exist != false) {
-                    $($(topcontent).attr("data-target")).css("background-color", "#800000")
+                    $($(topcontent).attr("data-target")).css("background-color", "mediumblue")
                 }
             }
 
@@ -205,34 +205,34 @@ $(function () {
                     top = thisz
                     if (topcontent === undefined) {
                     } else {
-                        topcontent.css("border-color", "#994141")
-                        topcontent.children(".data").css("background-color", "#994141")
+                        topcontent.css("border-color", "midnightblue")
+                        topcontent.children(".data").css("background-color", "midnightblue")
                     }
                     topcontent = $(this)
                 }
 
-                $(this).css("border-color", "#994141")
-                $(this).children(".data").css("background-color", "#994141")
+                $(this).css("border-color", "midnightblue")
+                $(this).children(".data").css("background-color", "midnightblue")
             })
             $($(this).attr("data-target")).css("zIndex", top + 1)
-            $($(this).attr("data-target")).css("border-color", "#990000")
-            $($(this).attr("data-target")).children(".data").css("background-color", "#990000")
+            $($(this).attr("data-target")).css("border-color", "royalblue")
+            $($(this).attr("data-target")).children(".data").css("background-color", "royalblue")
 
             $("#taskbar li").each(function () {
-                $(this).css("background-color", "#994141")
+                $(this).css("background-color", "midnightblue")
             })
-            $(this).css("background-color", "#800000")
+            $(this).css("background-color", "mediumblue")
         }
     })
 });
 
-function redraw_mem(ind_num,members){
+function redraw_mem(ind_num, members) {
 
     $("#membername").text(members[ind_num].name)
-    $("#membertwitter").text("@"+members[ind_num].twitterid)
-    $("#membertwitter").attr("href","https://twitter.com/"+members[ind_num].twitterid)
+    $("#membertwitter").text("@" + members[ind_num].twitterid)
+    $("#membertwitter").attr("href", "https://twitter.com/" + members[ind_num].twitterid)
     $("#membermessage").text(members[ind_num].message)
-    $("#profile_icon").attr("src","/img/"+members[ind_num].twitterid+".jpg")
+    $("#profile_icon").attr("src", "/img/" + members[ind_num].twitterid + ".jpg")
     $("#memnum").text(ind_num)
     $("#memname").text(members[ind_num].name)
 }
