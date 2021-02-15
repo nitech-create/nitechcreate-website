@@ -25,19 +25,23 @@ $(function () {
     var members = [{
         name: "dokudami",
         twitterid: "dokudamichang",
-        message: " 調整中"
+        message: "通学路のドクダミ草に愛を感じたのでこの名前です（てきとう）"
     }, {
         name: "Sora513",
         twitterid: "sayagi_sora",
-        message: " 調整中"
+        message: "初音ミクは概念。このサイトを(勝手に)作った人。"
     }, {
         name: "Ko_NiTech",
         twitterid: "Ko_NITech",
-        message: " 調整中"
+        message: "頑張りたいです"
     }, {
         name: "uint256_t",
         twitterid: "uint256_t",
-        message: " 調整中"
+        message: "compiler enthusiast"
+    },{
+        name: "コウ",
+        twitterid: "Kou714_823",
+        message: "みんなやさしいのでわからないことがあったら丁寧に教えてくれると思います！！"
     }]
     var ind_mem = 0;
     $("#membefore").click(function () {
