@@ -3,7 +3,7 @@ title: nitech Create メンバー一覧
 ---
 
 
-# Members
+# メンバー
 
 - ## dokudami
     - ![dokudami_icon](/img/dokudamichang.jpg)
