@@ -8,6 +8,8 @@ title: 活動内容
     - 名古屋工業大学の学生掲示板用のPC用アプリケーション。
         - インストールはこちらから 
         - [NiTech BB desktop client]()
+        - GitHubリポジトリはこちら
+        - [NiTech BB desktop client - GitHub](https://github.com/nitech-create/nitechBB-desktop-client)
         - お問い合わせはこちらから 
         - [お問い合わせ](/forms)
 - ## moodle assistant for NiTechを制作
@@ -15,6 +17,8 @@ title: 活動内容
     - 名古屋工業大学のmoodle(オンライン授業サイト)を見やすくするためのChrome拡張機能。
         - インストールはこちらから 
         - [moodle assistant for NiTech]()
+        - GitHubレポジトリはこちら
+        - [moodle assistant for NiTech - GitHub](https://github.com/nitech-create/nitech-moodle-chrome)
         - お問い合わせはこちらから 
         - [お問い合わせ](/forms)
 - ## 第0回LT
