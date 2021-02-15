@@ -67,7 +67,7 @@ $(function () {
                 var topcontent
                 $('.contents-box').each(function () {
                     var thisz = parseInt($(this).css('zIndex'), 10)
-
+    
                     if (thisz > top) {
                         top = thisz
                         if (topcontent === undefined) {
@@ -98,7 +98,9 @@ $(function () {
         $(element).click(function () {
             var top = 0;
             $('.contents-box').each(function () {
+                console.log(top)
                 var thisz = parseInt($(this).css('zIndex'), 10)
+                console.log(thisz)
                 if (thisz > top) {
                     top = thisz
                 }
@@ -117,7 +119,8 @@ $(function () {
 
     $(".contents-box .data .ope").click(function () {
 
-        if ($(this).parent().parent().css("border-color") == "blue") {
+        console.log($(this).parent().parent().css("border-color"))
+        if ($(this).parent().parent().css("border-color") == "rgb(65, 105, 225)") {
             var clicked = $(this)
             setTimeout(function () { $(clicked.parent().parent().attr("data-target")).trigger("click") }, 100)
         } else {
