@@ -26,7 +26,9 @@ body{
     color: lime;
         margin-top: 60px;
     }
-    
+    h3{
+        color: lime;
+    }
     p{
         padding-left: 1em;
     }
