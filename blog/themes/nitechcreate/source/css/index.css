@@ -1,21 +1,27 @@
-body{
-    overflow: hidden;
+@media only screen and (min-width:1025px){
+    body{
+        overflow: hidden;
+        
+        background-color:#060A35;
+    }
     
-    background-color:#060A35;
-}
-
-#navwrapper{
-    height:50px
-}
-
-#navwrapper:hover #navbar{
-margin-top: 0;
-transition: 0.3s ease-in-out;
-}
-
-#navbar{
-    margin-top: -100px;
+    #navwrapper{
+        height:50px
+    }
+    
+    #navwrapper:hover #navbar{
+    margin-top: 0;
     transition: 0.3s ease-in-out;
+    }
+    
+    #navbar{
+        margin-top: -100px;
+        transition: 0.3s ease-in-out;
+    }
+    
 }
 
 
+@media only screen and (max-width:1024px){
+    
+}
