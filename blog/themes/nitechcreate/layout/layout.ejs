@@ -14,6 +14,23 @@
   <meta name="description" content="nitech Createのウェブサイト 現在整備中" />
   <link rel="shortcut icon" href="/img/favicon.ico"">
   <title>niC <%- page.title %></title>
+ <!--Twitterカード-->
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="@Nitech_create"/>
+ <meta property="og:url" content="<%- url %>" />
+ <% if(page.path=="index.html"){ %>
+     <meta property="og:title" content="nitech Create 公式サイト"/>
+     <meta property="og:type" content="website" />
+ <% }else{ %>
+     <meta property="og:title" content="niC - <%- page.title %>"/> 
+     <meta property="og:type" content="article" />
+<% } %> 
+ <meta property="og:description" content="<%- page.title %> <%- config.ogdescription %>" />
+ <meta property="og:image" content="https://nitech-create.com/img/ogp.png" />
+ <!--検索とか-->
+ <meta property="description" content="<%- page.title %> <%- config.description %>" />
+ <meta name="author" content="nitech Create" />
+ <meta http-equiv="content-language" content="ja" />
 </head>
 <body>
   <link rel="stylesheet" href="/css/page.css">

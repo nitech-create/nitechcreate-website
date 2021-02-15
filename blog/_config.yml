@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: niC official
 subtitle: ''
-description: ''
+description: 'nitech Createの公式サイトです。いろいろなものを作ったり共有したり。現在整備中。'
 keywords:
-author: John Doe
-language: en
+author: nitech Create
+language: ja
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: https://nitech-create.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
