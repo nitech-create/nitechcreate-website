@@ -48,4 +48,4 @@ title: nitech Create メンバー一覧
 - ## undefined
     - ![undefined_icon](/img/undefined.jpg)
     - ### Messages
-        - 調整中
+        - 初心者です
