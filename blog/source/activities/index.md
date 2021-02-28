@@ -7,7 +7,7 @@ title: 活動内容
     - 2021/01/29 NiTech BB desktop clientの制作を開始
     - 名古屋工業大学の学生掲示板用のPC用アプリケーション。
         - インストールはこちらから 
-        - [NiTech BB desktop client]()
+        - [NiTech BB desktop client](/download)
         - GitHubリポジトリはこちら
         - [NiTech BB desktop client - GitHub](https://github.com/nitech-create/nitechBB-desktop-client)
         - お問い合わせはこちらから 

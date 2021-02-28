@@ -1,3 +1,3 @@
 ---
-title: NITech BB そのほかのお問い合わせ
+title: NITech BB DC お問い合わせ
 ---

@@ -234,7 +234,6 @@ $(function () {
 });
 
 function redraw_mem(ind_num, members) {
-
     $("#membername").text(members[ind_num].name)
     $("#membertwitter").text("@" + members[ind_num].twitterid)
     $("#membertwitter").attr("href", "https://twitter.com/" + members[ind_num].twitterid)
