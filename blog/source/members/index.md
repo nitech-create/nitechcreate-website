@@ -11,7 +11,7 @@ title: nitech Create メンバー一覧
         - [@dokudamichang](https://twitter.com/dokudamichang)
 
     - ### Messages
-        - 通学路のドクダミ草に愛を感じたのでこの名前です（てきとう）
+        - ドクダミ草、名前を借りるぜ
 
 - ## Sora513
     - ![Sora513_icon](/img/sayagi_sora.jpg)
